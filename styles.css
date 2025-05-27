@@ -1,14 +1,14 @@
 
 @font-face {
   font-family: 'Plank';
-  src: url('assets/fonts/PLANK___.TTF') format('truetype');
+  src: url('assets/fonts/CloisterBlack.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cloister Black Light';
-  src: url('assets/fonts/CloisterBlack 2.ttf') format('truetype');
+  src: url('assets/fonts/CloisterBlack.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
