@@ -1,0 +1,161 @@
+
+@font-face {
+  font-family: 'Cloister Black Light';
+  src: url('assets/fonts/CloisterBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  text-transform: lowercase;
+  box-sizing: border-box;
+}
+
+h1, h2, h3,h4, h5, h6{
+  color: #ffffff;
+  font-family: 'Cloister Black Light', serif;
+  text-shadow: 0 0 2px #555;
+}
+
+a {
+  color: #bbbbbb;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.social-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons:hover {
+  filter: brightness(100%);
+}
+
+button {
+  background-color: transparent;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  font-family: 'Cloister Black Light', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.social-icons img {
+  filter: invert(80%) brightness(90%);
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.05);
+  filter: invert(90%) brightness(100%);
+}
+
+/* Center and constrain layout on all screen sizes */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Make content responsive */
+main {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive icons */
+.social-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+
+.scroll-spacer {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .container {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+}
+
+
+/* === Centrado completo === */
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
