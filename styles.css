@@ -156,6 +156,7 @@ main.container {
   }
 }
 
+/* -------- PC -------- */
 
 @media (min-width: 768px) {
   .social-icons {
@@ -173,8 +174,11 @@ main.container {
     padding: 1rem;
   }
 
-  .social-icons img {
-    width: 40px;
-    height: 40px;
-  }
-}
+
+    .social-icons img{
+      width: 2em;
+      height: 2em;
+      /* or use fixed pixel values */
+      /* width: 32px; */
+      /* height: 32px; */
+    }
